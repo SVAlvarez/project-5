@@ -1,0 +1,80 @@
+body
+ { padding: 5%; background-color:  black;}
+
+h1{color:purple;}
+
+p{color:whitesmoke;
+color: grey
+ font-family:'Roboto', sans-serif;}
+
+ li {border-style: double;}
+
+ li{color: grey}
+
+li {display: grid;grid-gap: 20px 20px 20px;
+text-align: center;} 
+
+ h3 {color:blueviolet}
+.link {
+  font-size: 2rem;
+  color: rgb(98, 117, 117);
+  position: relative;
+  padding-5om: 5px;
+  transition: color 0.5s ease-out, font-size 0.1s ease-out;
+  text-decoration: none;
+  display: block;
+}
+
+.link > span {
+  font-size: 1.5rem;
+}
+
+.link:hover {
+  color: steelblue;
+  transition: color 0.5s ease-out, font-size 0.1s ease-out;
+  font-size: 2.07rem;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  transition: all 0.5s ease-out;
+}
+
+.link:hover::after {
+  background-color: steelblue;
+  transition: all 0.8s ease-out;
+}
+fade-in {
+  animation: fade-in 5s forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion) {
+.fade-in {animation: none}
+}
+or
+.fade-in {
+  animation: fade-in 5s forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion) {
+.element {animation: none}
+}
